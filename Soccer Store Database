@@ -1,0 +1,15 @@
+
+#First I created a database named soccer_store and added columns#
+CREATE TABLE soccer_store (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, aisle INTEGER, price INTEGER);
+
+#Inserted some values into the columns#
+INSERT INTO soccer_store VALUES(1, "ball", 3, 1, 5);
+INSERT INTO soccer_store VALUES(2, "jersey", 2, 2, 10);
+INSERT INTO soccer_store VALUES(3, "goal", 1, 3, 50);
+INSERT INTO soccer_store VALUES(4, "cleats", 6, 4, 80);
+INSERT INTO soccer_store VALUES(5, "gloves", 7, 5, 15);
+INSERT INTO soccer_store VALUES(6, "trophy", 3, 3, 5);
+INSERT INTO soccer_store VALUES(7, "shin guards", 6, 3, 4);
+
+#selected everything from the table#
+select * from soccer_store

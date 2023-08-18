@@ -66,7 +66,7 @@ orderid = '150506'
 GROUP BY
 product
 
-#How many customers ordered more than 2 products at a time, and what was the average amount spent for those customers?
+#7. How many customers ordered more than 2 products at a time, and what was the average amount spent for those customers?
 select 
 count(distinct cust.acctnum), 
 avg(quantity*price)
@@ -82,3 +82,14 @@ AND
 length(orderid) = 6 
 AND 
 orderid <> 'Order ID'
+
+#8. List all the products sold in Los Angeles in February, and include how many of each were sold.
+SELECT
+Product,
+SUM(Quantity)
+FROM
+BIT_DB.FebSales
+WHERE
+location LIKE '%Los Angeles%'
+GROUP BY
+Product

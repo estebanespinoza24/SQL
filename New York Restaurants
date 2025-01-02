@@ -1,4 +1,4 @@
-
+#Queried a database with restaurants out of New York to test my skills.
 
 SELECT * 
 FROM nomnom;
